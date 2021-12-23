@@ -13,7 +13,7 @@ const CardView = () => {
     console.log(res);
     if (res.status === 'success') {
       setCards(res.data.cards);
-      let totalAddAndCount = cards.length;
+      let totalAddAndCount = res.results;
       cards.map((card) => (totalAddAndCount += card.updateCount));
       setCount(totalAddAndCount);
       console.log(res);
@@ -25,7 +25,6 @@ const CardView = () => {
   return (
     <div className={styles.cardView}>
       <h1> Add and Update Count: {addUpdateCount} </h1>
-
       <div>
         {cards &&
           cards.map((card) => (
