@@ -7,15 +7,21 @@ const AddCard = () => {
   const [addTitle, setAddTitle] = useState();
   const [addDescription, setAddDescription] = useState();
 
+
+  //creates a toast alert when data is successfully added
   const onLoadAdd = () => {
     toast.success('Card succesfully added!');
   };
 
+  //fxn for adding data
   const addData = async (data) => {
     if (addTitle.length >= 10 || addDescription.length >= 100) {
       console.log('clicked');
       addCard(data, onLoadAdd);
     } else {
+      //if the length of the title is less then 10 
+      //or the length of the description is less then 100 
+      //it creates error alert toast
       toast.error(
         'title length should be greater then 10 and description length should be greater the 100!'
       );

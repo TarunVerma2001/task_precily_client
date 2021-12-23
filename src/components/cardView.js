@@ -6,6 +6,8 @@ import { getAllCards } from './../utils/api';
 const CardView = () => {
   const [cards, setCards] = useState();
   const [addUpdateCount, setCount] = useState();
+
+  //get the data from the server using api.js
   const getData = async () => {
     const res = await getAllCards();
     console.log(res);
