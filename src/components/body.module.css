@@ -1,0 +1,38 @@
+
+.body {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+  font-size: 30;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.topBoxes {
+  display: flex;
+}
+.box1,
+.box2 {
+  border: 1px solid #222831;
+  height: 500px;
+  width: 500px;
+  margin: 10px;
+  resize: both;
+  overflow: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box3 {
+  height: 500px;
+  width: 100%;
+  border: 1px solid #222831;
+  margin: 10px;
+  resize: both;
+  overflow: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
